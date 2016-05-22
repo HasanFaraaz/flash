@@ -1,7 +1,7 @@
 #!/bin/bash
-lynx --dump https://kat.cr/usearch/the%20flash/ >> file1
-lynx --dump https://kat.cr/usearch/gotham/ >> file1
-lynx --dump https://kat.cr/usearch/silicon%20valley/ >> file1
+lynx --dump put link 1 here >> file1
+lynx --dump put link 2 here >> file1
+lynx --dump put link 3 here >> file1
 grep "magnet:?xt=urn:btih:" file1 > file2
 sed -i 's/^......//' file2
 awk '/org%3A1337%2Fannounce/{print;print "";next}1' file2 > file3
