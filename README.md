@@ -8,6 +8,11 @@ In settings.json set umask as 2(be sure that transmission daemon is not running 
 
 I am using the magnet links to get the Episodes downloaded, so I am using grep to extract the episode information, if the episode number matches, then I download it.
 
+You need to add the kickass torrent link of the particular TV show.
+For ex :- For modern family kat link is https://kat.cr/usearch/modern%20family/
+          For flash kat link is https://kat.cr/usearch/the%20flash/
+          (these links should be added in su.sh file in the begining)
+
 So if you want to download your purticular episodes then, edit the su.sh file's grep statements.
 
 The transmission's webClient works in http://localhost:9091/transmission/web/
