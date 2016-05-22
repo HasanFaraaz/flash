@@ -1,6 +1,4 @@
 #!/bin/bash
-#notify-send -i /home/hasan/Desktop/flash/Flash.ico 'Flash is Running'
-#notify-send -i /home/hasan/Desktop/flash/Flash.ico 'Flash is Running' 'Getting silicon valley episode 3(not real)'
 lynx --dump https://kat.cr/usearch/the%20flash/ >> file1
 lynx --dump https://kat.cr/usearch/gotham/ >> file1
 lynx --dump https://kat.cr/usearch/silicon%20valley/ >> file1
@@ -22,17 +20,7 @@ echo "no. of line $lines"
 				echo "\n\n" >> f
 	fi
 	
-	if grep silicon+valley+s03e02+720p+hdtv+x265+hevc+ file3;
-		then
-			lineno=$(grep -n silicon+valley+s03e02+720p+hdtv+x265+hevc+ file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			echo episode 21 of silicon valley online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
+
 	'
 	if grep silicon+valley+s03e03+720p+hdtv+x265+hevc+ file3;
 		then
@@ -47,20 +35,7 @@ echo "no. of line $lines"
 				echo $link >> f
 				echo "\n\n" >> f
 	fi
-	:'
-	if grep silicon+valley+s03e04+720p+hdtv+x265+hevc+ file3;
-		then
-			lineno=$(grep -n silicon+valley+s03e04+720p+hdtv+x265+hevc+ file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			notify-send -i /home/hasan/Desktop/flash/Flash.ico 'Flash is Running' 'Getting silicon valley episode 4'
-			notify-send episode 4 of silicon valley online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
-	'
+	
 	if grep silicon+valley+s03e05+720p+hdtv+x265+hevc+ file3;
 		then
 			lineno=$(grep -n silicon+valley+s03e05+720p+hdtv+x265+hevc+ file3 | cut -d : -f 1)
@@ -135,17 +110,6 @@ echo "no. of line $lines"
 				echo "\n\n" >> f
 	fi
 	:'
-	if grep the+flash+2014+s02e20+hdtv+x264+lol+ettv file3;
-		then
-			lineno=$(grep -n the+flash+2014+s02e20+hdtv+x264+lol+ettv file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			echo episode 20 of flash online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
 	if grep gotham+s02e21+hdtv+x264+lol+ettv file3;
 		then
 			lineno=$(grep -n gotham+s02e21+hdtv+x264+lol+ettv file3 | cut -d : -f 1)
@@ -153,39 +117,6 @@ echo "no. of line $lines"
 			link=$(head -n $lineno file3 | tail -1)
 			echo $link
 			echo episode 21 of gotham online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
-	if grep gotham+s02e22+hdtv+x264+lol+ettv file3;
-		then
-			lineno=$(grep -n gotham+s02e22+hdtv+x264+lol+ettv file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			echo episode 22 of gotham online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
-	if grep gotham+s02e20+hdtv+x264+lol+ettv file3;
-		then
-			lineno=$(grep -n gotham+s02e20+hdtv+x264+lol+ettv file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			echo episode 20 of gotham online
-				transmission-remote -a $link
-				echo $link >> f
-				echo "\n\n" >> f
-	fi
-	if grep gotham+s02e19+hdtv+x264+lol+ettv file3;
-		then
-			lineno=$(grep -n gotham+s02e19+hdtv+x264+lol+ettv file3 | cut -d : -f 1)
-			echo "current line no :-" $lineno
-			link=$(head -n $lineno file3 | tail -1)
-			echo $link
-			echo episode 19 of gotham online
 				transmission-remote -a $link
 				echo $link >> f
 				echo "\n\n" >> f
