@@ -14,3 +14,9 @@ So if you want to download your purticular episodes then, edit the su.sh file's 
 The transmission's webClient works in http://localhost:9091/transmission/web/
 
 Tested and running in Ubuntu 16 LTS
+
+
+License
+-------
+
+[Apache Version 2.0][License]
